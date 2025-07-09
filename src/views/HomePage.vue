@@ -20,7 +20,6 @@
         </p>
       </div>
       <img class="histoire-image" src="../assets/pizzaBio.png" alt="Notre Histoire">
-
     </section>
 
     <!-- Section Carte/Service -->
@@ -146,12 +145,12 @@
     border-radius: 8px;
     margin-left: 20px;
   }
+
   /* carte */
   #carte {
     background-image: url('../assets/menu.png');
     height: 400px;
-    width: 98%;
-    margin: 0 auto;
+    margin: 20px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -237,6 +236,39 @@
     width: 450px;
     height: auto;
     border-radius: 10px;
+  }
+
+  @media (max-width: 866px) {
+
+    #histoire {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  @media (max-width: 530px) {
+    .restaurant-map {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 475px) {
+    .histoire-image {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .restaurant-map {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .restaurant-map {
+      width: 250px;
+    }
   }
 
 
