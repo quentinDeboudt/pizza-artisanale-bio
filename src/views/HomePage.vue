@@ -251,6 +251,10 @@
     .restaurant-map {
       width: 400px;
     }
+
+    .banner-image {
+      margin-top: 50px;
+    }
   }
 
   @media (max-width: 475px) {
