@@ -1,0 +1,16 @@
+:root {
+
+  /*Navigation bar: */
+  --navigation-bar-background: #323232;
+  --navigation-bar-primary-text-color: #ffffff;
+  --navigation-bar-secondary-text-color: #E12720;
+  --navigation-bar-third-text-color: #62B206;
+
+  --color-background: #FBFBFB;
+  --color-background-card: #ffffff;
+
+  --dot-primary-color: #62B206;
+
+  --drop-shadow-card: 0 0 0.75rem #bbbbbb
+
+}
