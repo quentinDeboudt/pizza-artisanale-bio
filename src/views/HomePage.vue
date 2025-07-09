@@ -172,7 +172,6 @@
   }
 
   .btn-carte a{
-    
     color: var(--color-background);
     text-decoration: none;
   }
@@ -180,7 +179,6 @@
   .btn-carte:hover {
     background-color: #30730F;
     transition: background-color 0.3s ease;
-    
   }
 
   /* list restaurants */
@@ -254,6 +252,10 @@
 
     .banner-image {
       margin-top: 50px;
+    }
+
+    #carte {
+      height: 150px;
     }
   }
 
