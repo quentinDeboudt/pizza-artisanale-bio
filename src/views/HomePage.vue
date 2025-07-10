@@ -48,27 +48,56 @@
             @click="selectedIndex = index"
           >
           </div>
-          
         </div>
 
         <div class="restaurant-info">
-          <p v-for="(phone, index) in currentRestaurant.phone" :key="index">
-            <strong>Tél:</strong> {{ phone }}
-          </p>
-          <p>{{ currentRestaurant.address }}</p>
-
+          <div>
+            <p v-for="(phone, index) in currentRestaurant.phone" :key="index">
+              <strong>Tél:</strong> {{ phone }}
+            </p>
+            <p class="address">{{ currentRestaurant.address }}</p>
+          </div>
           <img :src="currentRestaurant.image" alt="map du restaurant" class="restaurant-map" />
-
         </div>
       </div>
     </section>
+
+    <section id="horaires">
+      <h2>Nos Horaires</h2>
+      <table class="horaires-table">
+        <thead>
+          <tr>
+            <th>Jour</th>
+            <th>Horaires</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in horaires" :key="item.jour">
+            <strong><td>{{ item.jour }}</td></strong>
+            <td>{{ item.horaire }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </div>
+  <Footer/>
 </template>
 
 <script setup>
   import { ref, computed } from 'vue';
+  import Footer from '@/components/Footer.vue';
   import map1 from '../assets/Map-rue-de-nantes.png';
   import map2 from '../assets/Map-av-du-Général-Lerclerc.png';
+
+  const horaires = [
+        { jour: 'Lundi', horaire: 'Fermé' },
+        { jour: 'Mardi', horaire: '18h30 - 21h30' },
+        { jour: 'Mercredi', horaire: '18h30 - 21h30' },
+        { jour: 'Jeudi', horaire: '18h30 - 21h30' },
+        { jour: 'Vendredi', horaire: '18h30 - 21h30' },
+        { jour: 'Samedi', horaire: '18h30 - 21h30' },
+        { jour: 'Dimanche', horaire: '18h30 - 21h30' },
+      ]
 
   // Liste des restaurants
   const restaurants = [
@@ -226,34 +255,64 @@
   }
 
   .restaurant-info {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--dot-primary-color);
     padding-top: 1rem;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
   }
-
+  .address{
+    max-width: 200px;
+    font-weight: 700;
+  }
   .restaurant-map {
     width: 450px;
     height: auto;
     border-radius: 10px;
   }
 
-  @media (max-width: 866px) {
+  #horaires {
+    background-image: url('../assets/horaires.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    filter: drop-shadow(var(--drop-shadow-card));
+    background-repeat: no-repeat;
+  }
+  .horaires-table {
+    width: fit-content;
+  }
 
+  @media (max-width: 866px) {
     #histoire {
       display: flex;
       flex-direction: column;
     }
+  }
 
+  @media (max-width: 720px) {
+  .restaurant-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
   }
 
   @media (max-width: 530px) {
     .restaurant-map {
       width: 400px;
     }
-
     .banner-image {
       margin-top: 50px;
     }
-
     #carte {
       height: 150px;
     }
