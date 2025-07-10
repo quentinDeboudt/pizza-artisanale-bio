@@ -40,7 +40,6 @@
     width: 30px;
   }
   .site-footer {
-    border: 1px solid red;
     background-color: var(--color-navigation);
     color: var(--navigation-bar-primary-text-color);
     margin-top: 3rem;
