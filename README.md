@@ -8,6 +8,4 @@ Il est construit avec **Vue.js** et présente les services, horaires, informatio
 - Vue.js (composition API)
 - Firebase
 
-## 🔗 Lien vers le site en ligne:
-
-👉 [Voir le site en ligne]([https://ton-lien.netlify.app](https://pizza-artisanale-bio.web.app/))
+## 🔗 Lien vers le site en ligne: https://pizza-artisanale-bio.web.app/
