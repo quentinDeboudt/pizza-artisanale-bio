@@ -35,8 +35,8 @@
       
       <div class="selector-container">
         <div class="restaurant-names">
-          <div><p>PIZZA BIO</p> <span>rue de lalutte</span></div>
-          <div><p>PIZZA BIO</p> <span>rue st-charle</span></div>
+          <div><p>PIZZA BIO</p> <span>Rue de Lalutte</span></div>
+          <div><p>PIZZA BIO</p> <span>Rue St-Charle</span></div>
         </div>
         
         <div class="dots">
