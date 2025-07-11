@@ -1,24 +1,13 @@
-# mon-site-vitrine
+# 🍕 Pizza Bio – Site Vitrine
 
-## Project setup
-```
-npm install
-```
+Ce projet est un site vitrine responsive pour une pizzeria artisanale et bio.  
+Il est construit avec **Vue.js** et présente les services, horaires, informations de contact et le menu.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## ⚙️ Technologies utilisées:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Vue.js (composition API)
+- Firebase
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 🔗 Lien vers le site en ligne:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+👉 [Voir le site en ligne]([https://ton-lien.netlify.app](https://pizza-artisanale-bio.web.app/))
