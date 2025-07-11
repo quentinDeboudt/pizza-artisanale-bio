@@ -8,7 +8,7 @@
     <!-- Section Notre Histoire -->
     <section id="histoire">
       <div class="histoire-text">
-        <h2>Bienvenue chez PizzaBio !</h2>
+        <h2>Bienvenue chez Pizza Bio !</h2>
         <p>
           Chez nous, la simplicité rime avec qualité. Nous vous proposons des pizzas artisanales 100 % bio, élaborées avec soin à partir d'ingrédients naturels et sains. 
           Notre pâte est unique : sans matière grasse, sans sucre ajouté, et avec 12 % de sel en moins que la moyenne.
@@ -16,7 +16,7 @@
           <br>
           Elle est préparée avec seulement quatre ingrédients : de la farine, de l’eau, de la levure et du sel, c’est tout !
           <br>
-          Mais ce n’est pas tout : nous laissons notre pâte fermenter pendant au moins 48 heures, pour une digestion plus facile et un goût incomparable.
+          Nous laissons notre pâte fermenter pendant au moins 48 heures, pour une digestion plus facile et un goût incomparable !
         </p>
       </div>
       <img class="histoire-image" src="../assets/pizzaBio.png" alt="Notre Histoire">
@@ -35,8 +35,8 @@
       
       <div class="selector-container">
         <div class="restaurant-names">
-          <div><p>PIZZA BIO</p> <span>Rue de Nantes</span></div>
-          <div><p>PIZZA BIO</p> <span>Av. du G.Leclerc</span></div>
+          <div><p>PIZZA BIO</p> <span>rue de lalutte</span></div>
+          <div><p>PIZZA BIO</p> <span>rue st-charle</span></div>
         </div>
         
         <div class="dots">
@@ -86,7 +86,6 @@
 <script setup>
   import { ref, computed } from 'vue';
   import Footer from '@/components/Footer.vue';
-  import map1 from '../assets/Map-rue-de-nantes.png';
   import map2 from '../assets/Map-av-du-Général-Lerclerc.png';
 
   const horaires = [
@@ -102,13 +101,13 @@
   // Liste des restaurants
   const restaurants = [
     {
-      phone: ['02 90 89 34 27', '02 90 89 34 28'],
-      address: '244 rue de Nantes 35136 St Jacques de la Lande en face d\'Azur Bio',
-      image: map1
+      phone: ['09 35 83 34 67', '04 46 28 49 81'],
+      address: '44 rue de lalutte 35000 Rennes',
+      image: map2
     },
     {
-      phone: ['02 21 07 83 90'],
-      address: '133 av du Général Lerclerc 35700 Rennes en face du Biocoop',
+      phone: ['09 31 68 49 19'],
+      address: '56 rue st-charle 35000 Rennes',
       image: map2
     }
   ];

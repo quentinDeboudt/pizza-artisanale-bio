@@ -1,26 +1,26 @@
 <template>
   <footer class="site-footer">
     <div class="footer-content">
-      <p>&copy; 2025 MaStructure. Tous droits réservés.</p>
+      <p>&copy; 2025 Pizza Bio. Tous droits réservés.</p>
       
       <img src="@/assets/logo-pizza.png" alt="Logo" class="logo"/>
         
       <a
-        href="https://www.instagram.com/pizzabiorennes/"
-        aria-label="Instagram"
+        href="https://www.linkedin.com/in/deboudtquentindeveloppeurweb/"
+        aria-label="linkedin"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img class="instagram" src="../assets/instagram.png" alt="">
+        <img class="instagram" src="../assets/linkedin.png" alt="">
       </a>
 
       <a
-        href="https://www.facebook.com/p/Pizza-Bio-100070366478077/"
-        aria-label="Instagram"
+        href="https://quentindeboudt.shop/"
+        aria-label="website"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img class="instagram" src="../assets/facebook.png" alt="">
+        <img class="instagram" src="../assets/site-internet.png" alt="">
       </a>
     </div>
   </footer>
